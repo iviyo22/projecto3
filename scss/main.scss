@@ -88,6 +88,53 @@ nav{
     }
 }
 
+// Principio de contacto
+
+.grid-container{
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+display: grid;
+gap: 10px;
+grid-template-columns:  column repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+.grid-container > div {
+    background-color: black;
+    border: $border-c;
+    color: aliceblue;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    font-size: $font-p;
+    padding: 30px;
+   box-sizing: initial;
+    
+ 
+}
+
+.fondo-c{
+    background-image:url(https://cdn.pixabay.com/photo/2018/05/01/22/46/network-operator-3367207_640.jpg) ;
+    background-size: cover;
+    
+}
+
+
+.fondo-c2{
+    background-image:url(https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630737_640.jpg) ;
+    background-size: cover;
+}
+
+a{
+    font: $font-p;
+}
+    
+
+
+
+//Fin de contacto
+
 footer{
     min-height: 80px;
     background-color: rgb(52, 53, 51);
@@ -102,4 +149,3 @@ footer{
 @import 'medios';
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
