@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,63 +12,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Contacto</title>
-    
-    </head>
-    
-    <body>
-    
-        <div class="grid-container">
-            
-            
-<div class="fondo-c">
-    <a href="index.html"> Inicio </a>
-    </div>
-           <div>
-                <form>
-                    <label>Tu Nombre</label>
-                
-                    <br>
-                    <br>
-                    <input type="text" placeholder="Escribe tu nombre ">
-                    <br>
-                    <br>
-                    <label>Tu Apellido</label>
-                    <br>
-                    <br>
-                
-                    <input type="text" placeholder="Escribe tu apellido ">
-                
-                    <br>
-                    <br>
-                    <label>Tu Email</label>
-                    <br>
-                    <br>
-                    <input type="email" placeholder="Escribe tu mail ">
-                    <br>
-                    <br>
-                    <textarea class="textarea" placeholder="dejanos tu consulta" cols="30" rows="10"></textarea>
-                
-                    <br>
-                    <br>
-                    <br>
-                
-                    <input type="submit" value="ENVIAR">
-                
-                </form>
-        </div>
-      
-        <div class="fondo-c2">
 
+</head>
+
+<body class="body-c">
+    <a class="btn btn-dark fs-3" href="index.html" role="button">Inicio</a>
+    <section class="container mt-4" style="max-width: 400px" id="contenedor-formulario">
+
+        <div class="text-center text-white" id="titulo-formulario">      
+          <h2 class="p-3 fs-1">Contactos</h2>  
         </div>
-        
-       
-       
-       
-       
-    </div>
-    
+  
+  
+        <form action="" id="formulario">
+          <div class="mb-3">
+            <input type="email" class="form-control fs-3" id="email" placeholder="nombre@ejemplo.com">
+          </div>
+  
+  
+          <div class="mb-3">
+            <input type="input" class="form-control fs-3" id="nombre" placeholder="Adrian Mendoza">
+          </div>
+  
+  
+          <div class="mb-3">
+            <input type="email" class="form-control fs-3" id="tel" placeholder="Teléfono">
+          </div>
+  
+          <div class="mb-3">
+            <textarea class="form-control fs-3" id="msj" rows="4"></textarea>
+          </div>
+  
+          <div class="mb-3 fs-2">
+            <button type="button" class=" btn btn-danger w-100 fs-5 mb-3">Enviar Mensaje</button>
+          </div>
+        </form>
+  
+      </section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets2/img3/maps.png" class="d-block w-100" alt="logo">
+          </div>
+          <div class="carousel-item">
+            <img src="assets2/img3/redes.png" class="d-block w-100" alt="redes">
+          </div>
+          <div class="carousel-item">
+            <img src="assets2/img3/wpp.png" class="d-block w-100 img-fluid" alt="fiambre">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 </html>

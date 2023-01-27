@@ -4,7 +4,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -13,7 +15,6 @@ body {
   padding: 0;
   line-height: 1.6;
   font-family: "Noto Sans JP", sans-serif;
-  background: url("../img/fondo.png");
 }
 
 ul {
@@ -31,12 +32,16 @@ img {
   height: auto;
 }
 
-nav, .servicios, .presentacion, .footer-content {
+nav,
+.servicios,
+.presentacion,
+.footer-content {
   width: 80%;
   margin: auto;
 }
 
-.titulo-servicios, .presentacion {
+.titulo-servicios,
+.presentacion {
   margin-bottom: 10%;
 }
 
@@ -78,8 +83,8 @@ h3 {
   background-color: rgb(134, 132, 132);
 }
 
-body {
-  background-color: black;
+.body-m {
+  background-image: url(https://lh3.googleusercontent.com/p/AF1QipOi0cWQi9q2YDXrabby3E4HBQJp44UAW4TEGFq4=s1360-w1360-h1020);
 }
 
 .logo {
@@ -87,15 +92,14 @@ body {
   height: 20px;
 }
 
-header {
+#menu header {
   position: fixed;
   top: 0;
   border-top: 30px solid rgb(52, 53, 51);
   width: 100%;
 }
-
-headear a {
-  color: rgba(231, 222, 227, 0.8);
+#menu header a {
+  color: rgb(236, 8, 8);
   font-size: 3rem;
 }
 
@@ -119,10 +123,16 @@ nav ul a {
   padding: 10px;
   font-size: 1.6rem;
   font-weight: bold;
+  color: black;
 }
 nav ul a:hover {
   color: #6495ED;
   transform: scale(1.1);
+}
+
+.pf {
+  font-size: 2.4rem;
+  color: black;
 }
 
 .presentacion {
@@ -137,13 +147,13 @@ nav ul a:hover {
   text-align: center;
 }
 .presentacion h1 {
-  color: rgba(231, 222, 227, 0.8);
+  color: rgb(236, 8, 8);
   margin-top: 0;
   padding-right: 20px;
   font-size: 3rem;
 }
 .presentacion p {
-  color: rgba(231, 222, 227, 0.8);
+  color: rgb(236, 8, 8);
   padding-right: 20px;
   padding-bottom: 10px;
 }
@@ -154,7 +164,7 @@ nav ul a:hover {
 .servicios .tipo-servicios {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   flex-wrap: nowrap;
 }
 .servicios .tipo-servicios i {
@@ -162,60 +172,75 @@ nav ul a:hover {
   color: #6495ED;
 }
 
-.grid-container {
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
-  display: grid;
-  gap: 10px;
-  grid-template-columns: column repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.grid-container > div {
-  background-color: black;
-  border: 5px solid black;
-  color: aliceblue;
-  text-align: center;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: column;
-  font-size: 1.8rem;
-  padding: 30px;
-  box-sizing: initial;
-}
-
-.fondo-c {
-  background-image: url(https://cdn.pixabay.com/photo/2018/05/01/22/46/network-operator-3367207_640.jpg);
+.body-c {
+  background: url(https://media.istockphoto.com/id/1364376802/es/vector/brillo-desenfoque-de-fondo-moderno.jpg?s=612x612&w=0&k=20&c=nWxE0zhTdcYBhcnr7129YrUjVYY2aRtyiBpD9TzeEHw=) no-repeat center center fixed;
   background-size: cover;
 }
 
-.fondo-c2 {
-  background-image: url(https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630737_640.jpg);
-  background-size: cover;
+#contenedor-formulario {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 
-a {
-  font: 1.8rem;
+#tel, #msj, #email, #nombre {
+  background: rgba(249, 249, 250, 0.1);
 }
 
-footer {
+::-moz-placeholder {
+  color: rgb(245, 245, 245) !important;
+}
+
+:-ms-input-placeholder {
+  color: rgb(245, 245, 245) !important;
+}
+
+::placeholder {
+  color: rgb(245, 245, 245) !important;
+}
+
+.body-p {
+  background-color: #455a64;
+  padding: 20px;
+}
+
+.footer-index {
   min-height: 80px;
   background-color: rgb(52, 53, 51);
   margin-top: 0;
 }
-footer .footer-content {
+.footer-index .footer-content {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 1400px) {
-  nav, .servicios, .footer-content, .presentacion {
+  nav,
+.servicios,
+.footer-content,
+.presentacion {
     width: 60%;
     margin: auto;
   }
+  #intro, #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
 }
 @media (max-width: 992px) {
-  .presentacion, .tipo-servicios {
+  .presentacion,
+.tipo-servicios {
     flex-direction: column;
   }
   .presentacion div {
@@ -239,7 +264,8 @@ footer .footer-content {
     text-align: center;
     margin-bottom: 30px;
   }
-  .presentacion div h1, .presentacion div p {
+  .presentacion div h1,
+.presentacion div p {
     padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */

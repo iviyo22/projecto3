@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +13,27 @@
     <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    
-    <header id="menu">         
+<body class="body-m">
+
+    <header id="menu">
         <nav>
-            <a href="preguntas.html">Preguntas Frecuentes</a>
+            <a href="preguntas.html" class="pf">Preguntas Frecuentes</a>
             <ul>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="distribuidora.html">Distribuidora</a></li>
                 <li><a href="productos.html">Productos</a></li>
             </ul>
-        </nav>            
+        </nav>
     </header>
 
 
 
     <section class="presentacion">
         <div class="flex-item1">
-            <h1>Deseamos que disfrutes de una experiencia diferente</h1>
-            <p>
-             En mercado la plata siempre priorizamos al cliente, seguinos abajo en nuestras redes para comunicarte ante cualquier consulta
-            </p>
+        
             <div>
-                <button class="btn-principal" type ="submit">Instagram</button>
-                <button class="btn-secundario" type ="submit">Twitter</button>
+                <button class="btn-principal" type="submit">Instagram</button>
+                <button class="btn-secundario" type="submit">Twitter</button>
             </div>
         </div>
         <div class="flex-item2">
@@ -45,7 +43,7 @@
 
 
     <div class="wrapper">
-        <section class="servicios" >
+        <section class="servicios">
             <div class="titulo-servicios">
                 <h2>Creamos Experiencias Maravillosas Para Nuestro Clientes</h2>
                 <p>
@@ -57,7 +55,7 @@
                     <i class="fas fa-drafting-compass"></i>
                     <h3>Nuestro local</h3>
                     <p> "Un viaje en el tiempo que nos remite a aquellos mercados<br>
-                   tradicionales de Buenos Aires donde nuestros abuelos se surtían de productos "
+                        tradicionales de Buenos Aires donde nuestros abuelos se surtían de productos "
                     </p>
                 </div>
                 <div>
@@ -81,25 +79,25 @@
         </section>
     </div>
 
-    <footer>
+    <footer class="footer-index">
         <p class="footer-content">
-            One Store
-            2023 Mercado la Plata - Reservados todos los derechos.
-            Queda prohibida la copia, utilización de este contenido sin el consentimiento previo y explícito.
+            ArtWEB &copy;Todos los derechos reservados 2021
         </p>
     </footer>
+      
     <script>
-       const menu = document.getElementById('menu');
-       window.onscroll = function(){
-           if(window.pageYOffset>10){
-               menu.style.backgroundColor='#fff';
-           }
-           else{
-               menu.style.backgroundColor='initial';
-           }
-       }
+        const menu = document.getElementById('menu');
+        window.onscroll = function () {
+            if (window.pageYOffset > 10) {
+                menu.style.backgroundColor = '#fff';
+            }
+            else {
+                menu.style.backgroundColor = 'initial';
+            }
+        }
     </script>
- 
+
 
 </body>
+
 </html>

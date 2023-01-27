@@ -1,87 +1,97 @@
 @import 'global';
 
-body{
-    background-color: black;
+.body-m{
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipOi0cWQi9q2YDXrabby3E4HBQJp44UAW4TEGFq4=s1360-w1360-h1020);
 }
 
-.logo{
-    width:100px;
-    height:20px;
+.logo {
+    width: 100px;
+    height: 20px;
 }
-
-header{
-    position:fixed;
-    top:0;
+#menu{
+header {
+    position: fixed;
+    top: 0;
     border-top: 30px solid rgb(52, 53, 51);
-    width:100%;
+    width: 100%;
 }
-headear a{
+
+header a {
     color: $base-color;
-     font-size: $font-h1;
+    font-size: $font-h1;
+}
 }
 
-
-.wrapper{
+.wrapper {
     background-color: lightgrey;
     padding-top: 100px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
 }
 
 
 
 
 
-nav{
+nav {
     @include caja-flex(space-between, center, nowrap);
 
-    ul{
-        display:flex;
-        padding:0;
+    ul {
+        display: flex;
+        padding: 0;
 
-        a{
+        a {
             padding: 10px;
             font-size: 1.6rem;
-            font-weight:bold;
+            font-weight: bold;
+            color: black;
         }
 
-        a:hover{
-            color:#6495ED;
+        a:hover {
+            color: #6495ED;
             transform: scale(1.1);
         }
     }
 }
 
-.presentacion{
+.pf{
+    font-size: $font-h2;
+    color: black;
+}
+
+
+
+.presentacion {
     padding-top: 200px;
-    padding-bottom:50px;
+    padding-bottom: 50px;
     @include caja-flex(space-between, center, nowrap);
 
-    .flex-item2{
-        text-align:center;
+    .flex-item2 {
+        text-align: center;
     }
 
-    h1{
+    h1 {
         color: $base-color;
-        margin-top:0;
+        margin-top: 0;
         padding-right: 20px;
         font-size: $font-h1;
     }
 
-    p{
+    p {
         color: $base-color;
         padding-right: 20px;
         padding-bottom: 10px;
     }
 }
 
-.servicios{
-    div{
+.servicios {
+    div {
         text-align: center;
     }
 
-    .tipo-servicios{
-        @include caja-flex(center, center, nowrap);
-        i{
+    .tipo-servicios {
+        @include caja-flex(center, normal, nowrap);
+
+        i {
             font-size: 30px;
             color: #6495ED;
         }
@@ -90,52 +100,37 @@ nav{
 
 // Principio de contacto
 
-.grid-container{
- background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-display: grid;
-gap: 10px;
-grid-template-columns:  column repeat(auto-fit, minmax(150px, 1fr));
-
+.body-c {
+    background:url(https://media.istockphoto.com/id/1364376802/es/vector/brillo-desenfoque-de-fondo-moderno.jpg?s=612x612&w=0&k=20&c=nWxE0zhTdcYBhcnr7129YrUjVYY2aRtyiBpD9TzeEHw=) no-repeat center center fixed;
+    background-size:cover;
 }
 
-.grid-container > div {
-    background-color: black;
-    border: $border-c;
-    color: aliceblue;
-    text-align: center;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    font-size: $font-p;
-    padding: 30px;
-   box-sizing: initial;
-    
- 
+#contenedor-formulario{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    backdrop-filter:blur(1px);
 }
 
-.fondo-c{
-    background-image:url(https://cdn.pixabay.com/photo/2018/05/01/22/46/network-operator-3367207_640.jpg) ;
-    background-size: cover;
-    
+#tel, #msj, #email, #nombre {
+    background: rgba(249, 249, 250, 0.1)
+}
+
+::placeholder {
+    color: rgb(245, 245, 245) !important;
+}
+
+//FIN DE CONTACTO
+
+//principio productos
+
+.body-p{
+    background-color: $color-principal;
+    padding: 20px;
 }
 
 
-.fondo-c2{
-    background-image:url(https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630737_640.jpg) ;
-    background-size: cover;
-}
 
-a{
-    font: $font-p;
-}
-    
-
-
-
-//Fin de contacto
-
-footer{
+.footer-index{
     min-height: 80px;
     background-color: rgb(52, 53, 51);
     margin-top: 0;
@@ -145,6 +140,7 @@ footer{
         padding-bottom:30px;
     }
 }
+
 
 @import 'medios';
 
