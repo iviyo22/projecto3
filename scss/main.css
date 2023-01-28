@@ -123,16 +123,16 @@ nav ul a {
   padding: 10px;
   font-size: 1.6rem;
   font-weight: bold;
-  color: black;
+  color: white;
 }
-nav ul a:hover {
+nav ul a a:hover {
   color: #6495ED;
   transform: scale(1.1);
 }
 
 .pf {
   font-size: 2.4rem;
-  color: black;
+  color: white;
 }
 
 .presentacion {
@@ -203,6 +203,10 @@ nav ul a:hover {
 .body-p {
   background-color: #455a64;
   padding: 20px;
+}
+
+.distri-c {
+  background-color: #455a64;
 }
 
 .footer-index {
