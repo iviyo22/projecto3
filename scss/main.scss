@@ -1,6 +1,6 @@
-@import 'global';
+@use 'global';
 
-.body-m{
+.body-m {
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipOi0cWQi9q2YDXrabby3E4HBQJp44UAW4TEGFq4=s1360-w1360-h1020);
 }
 
@@ -8,19 +8,21 @@
     width: 100px;
     height: 20px;
 }
-#menu{
-header {
-    position: fixed;
-    top: 0;
-    border-top: 30px solid rgb(52, 53, 51);
-    width: 100%;
-}
 
-header a {
-    color: $base-color;
-    font-size: $font-h1;
-}
-}
+ 
+    header {
+        position: fixed;
+        top: 0;
+        border-top: 30px solid rgb(52, 53, 51);
+        width: 100%;
+        padding: 10px;
+    }
+
+    header a {
+        color: $base-color;
+        font-size: $font-h1;
+    }
+
 
 .wrapper {
     background-color: lightgrey;
@@ -45,16 +47,16 @@ nav {
             font-weight: bold;
             color: white;
 
-        a:hover {
-            color: #6495ED;
-            transform: scale(1.1);
+            a:hover {
+                color: #6495ED;
+                transform: scale(1.1);
+            }
         }
-    }
 
     }
 }
 
-.pf{
+.pf {
     font-size: $font-h2;
     color: white;
 }
@@ -78,7 +80,7 @@ nav {
     }
 
     p {
-        color:$base-color;
+        color: $base-color;
         padding-right: 20px;
         padding-bottom: 10px;
     }
@@ -102,17 +104,20 @@ nav {
 // Principio de contacto
 
 .body-c {
-    background:url(https://media.istockphoto.com/id/1364376802/es/vector/brillo-desenfoque-de-fondo-moderno.jpg?s=612x612&w=0&k=20&c=nWxE0zhTdcYBhcnr7129YrUjVYY2aRtyiBpD9TzeEHw=) no-repeat center center fixed;
-    background-size:cover;
+    background: url(https://media.istockphoto.com/id/1364376802/es/vector/brillo-desenfoque-de-fondo-moderno.jpg?s=612x612&w=0&k=20&c=nWxE0zhTdcYBhcnr7129YrUjVYY2aRtyiBpD9TzeEHw=) no-repeat center center fixed;
+    background-size: cover;
 }
 
-#contenedor-formulario{
+#contenedor-formulario {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    backdrop-filter:blur(1px);
+    backdrop-filter: blur(1px);
 }
 
-#tel, #msj, #email, #nombre {
+#tel,
+#msj,
+#email,
+#nombre {
     background: rgba(249, 249, 250, 0.1)
 }
 
@@ -124,29 +129,29 @@ nav {
 
 //principio productos
 
-.body-p{
+.body-p {
     background-color: $color-principal;
     padding: 20px;
 }
- //fin de productos
 
- .distri-c{
+//fin de productos
+
+.distri-c {
     background-color: $color-principal;
- }
+}
 
 
-.footer-index{
+.footer-index {
     min-height: 80px;
     background-color: rgb(52, 53, 51);
     margin-top: 0;
-    .footer-content{
-        text-align:center;
-        padding-top:30px;
-        padding-bottom:30px;
+
+    .footer-content {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
 
-@import 'medios';
-
-
+@use 'medios';

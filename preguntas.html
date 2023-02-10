@@ -17,126 +17,174 @@
 </head>
 
 <body>
-    <a class="btn btn-dark fs-3" href="index.html" role="button">Inicio</a>
+
+    <header id="menu">
+        <nav class="navbar fixed-top bg-dark mt-3">
+            <div class="container-fluid">
+              <a class="navbar-brand bg-dark text-light fs-3" href="index.html">Inicio</a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel">Mercado La plata</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active fs-3" aria-current="page" href="distribuidora.html">Distribuidora</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-3" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle fs-4" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-4" href="productos.html">Granja</a></li>
+                        <li><a class="dropdown-item fs-4" href="productos.html">Fiambreria</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item fs-4" href="productos.html">Almacen</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
     <main class="vh-100 bg-light d-flex align-items-center">
-     
-<section id="principal" class="h-75 container-sm mx-auto bg-light" style ="max-width: 800px;">
 
-<h1 class="fs-2 text-primary text-center py-3">¿En qué le podemos ayudar?</h1>
+        <section id="principal" class="h-75 container-sm mx-auto bg-light" style="max-width: 800px;">
 
-<div class="accordion" id="accordionExample">
+            <h1 class="fs-2 text-primary text-center py-3">¿En qué le podemos ayudar?</h1>
 
-
-<div class="accordion-item my-4">
-<h2 class="accordion-header" id="headingOne">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-<i class="bi bi-truck-flatbed"></i>
-<span class="px-3 text-info fs-3">Envios</span>
-</button>
-</h2>
-<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-<div class="accordion-body">
- <h2 class="fs-5 fw-semibold">1. ¿Dónde está mi pedido?</h2>
- <div class="my-2">Con el codigo que te enviamos chequealo por whatsapp.</div>
- <h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
- <div class="my-2">Con el codigo que te enviamos chequealo por whatsapp.</div>
- <h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
- <div class="my-2">EN la se ccion de contacto envianos lo sucedido.</div>
- <h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
- <div class="my-2">Re estaremos avisando para retirar o cuando llegue por whatsapp.</div>
- <h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
- <div class="my-2">48 hs.</div>
-</div>
-</div>
-</div>
-
-<div class="accordion-item my-4">
-<h2 class="accordion-header" id="headingTwo">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-<i class="bi bi-credit-card"></i>
-<span class="px-3 text-info fs-3" >Pagos</span>  
-</button>
-</h2>
-<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-<div class="accordion-body">
-<h2 class="fs-5fw-semibold">1. ¿Dónde está mi pedido?</h2>
-<div class="my-2">Con el codigo que te enviamos chequealo por whatsapp.</div>
-<h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
-<div class="my-2">48 hs desde el pago </div>
-<h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
-<div class="my-2">utiliza contacto.</div>
-<h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
-<div class="my-2">por whatsapp.</div>
-<h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
-<div class="my-2">48 hs.</div>
-</div>
-</div>
-</div>
-
-<div class="accordion-item my-4">
-<h2 class="accordion-header" id="headingThree">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-
-<i class="bi bi-arrow-return-left"></i>
-<span class="px-3 text-info fs-3">Devoluciones</span>
-</button>
-</h2>
-<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-<div class="accordion-body">
-<h2 class="fs-5 fw-semibold">1. ¿Dónde está mi pedido?</h2>
-<div class="my-2">Si su pago ya esta en viaje no puede devolver la comprar.</div>
-<h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
-<div class="my-2">48 hs.</div>
-<h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
-<div class="my-2">Ir a la parte de contacto y buscar una solucion.</div>
-<h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
-<div class="my-2"> Por whatsapp con el codigo.</div>
-<h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
-<div class="my-2">48hs.</div>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading4">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-<i class="bi bi-percent"></i>
-<span class="px-3 text-info fs-3">Promociones</span>
-</button>
-</h2>
-<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
-<div class="accordion-body">
-<h2 class="fs-5 fw-semibold">1. ¿Dónde está mi pedido?</h2>
-<div class="my-2">Depende tu promo.</div>
-<h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
-<div class="my-2">Depende las promos consultalo.</div>
-<h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
-<div class="my-2">Contactate con nosotrnos via whatsapp.</div>
-<h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
-<div class="my-2">via whatsapp.</div>
-<h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
-<div class="my-2">48 hs o 24 segun promo.</div>
-</div>
-</div>
-</div>
+            <div class="accordion" id="accordionExample">
 
 
-</div>
+                <div class="accordion-item my-4">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-truck-flatbed"></i>
+                            <span class="px-3 text-info fs-3">Envios</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-5 fw-semibold">1. ¿Dónde está mi pedido?</h2>
+                            <div class="my-2">Con el codigo que te enviamos chequealo por whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
+                            <div class="my-2">Con el codigo que te enviamos chequealo por whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
+                            <div class="my-2">EN la se ccion de contacto envianos lo sucedido.</div>
+                            <h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
+                            <div class="my-2">Re estaremos avisando para retirar o cuando llegue por whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
+                            <div class="my-2">48 hs.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item my-4">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-credit-card"></i>
+                            <span class="px-3 text-info fs-3">Pagos</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-5fw-semibold">1. ¿Dónde está mi pedido?</h2>
+                            <div class="my-2">Con el codigo que te enviamos chequealo por whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
+                            <div class="my-2">48 hs desde el pago </div>
+                            <h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
+                            <div class="my-2">utiliza contacto.</div>
+                            <h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
+                            <div class="my-2">por whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
+                            <div class="my-2">48 hs.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item my-4">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                            <i class="bi bi-arrow-return-left"></i>
+                            <span class="px-3 text-info fs-3">Devoluciones</span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-5 fw-semibold">1. ¿Dónde está mi pedido?</h2>
+                            <div class="my-2">Si su pago ya esta en viaje no puede devolver la comprar.</div>
+                            <h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
+                            <div class="my-2">48 hs.</div>
+                            <h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
+                            <div class="my-2">Ir a la parte de contacto y buscar una solucion.</div>
+                            <h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
+                            <div class="my-2"> Por whatsapp con el codigo.</div>
+                            <h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
+                            <div class="my-2">48hs.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-percent"></i>
+                            <span class="px-3 text-info fs-3">Promociones</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading4"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-5 fw-semibold">1. ¿Dónde está mi pedido?</h2>
+                            <div class="my-2">Depende tu promo.</div>
+                            <h2 class="fs-5 fw-semibold">2. ¿Cúando llegará mi pedido?</h2>
+                            <div class="my-2">Depende las promos consultalo.</div>
+                            <h2 class="fs-5 fw-semibold">3. ¿Qué hacer si no llega mi pedido?</h2>
+                            <div class="my-2">Contactate con nosotrnos via whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">4. ¿Cómo sigo el envio?</h2>
+                            <div class="my-2">via whatsapp.</div>
+                            <h2 class="fs-5 fw-semibold">5. ¿Cúanto tiempo se demora el envio?</h2>
+                            <div class="my-2">48 hs o 24 segun promo.</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
 
 
 
-</section>
+        </section>
 
-</main>
+    </main>
 
 
-<footer class="footer-index">
-    <p class="footer-content">
-        ArtWEB &copy;Todos los derechos reservados 2021
-    </p>
-</footer>
-  
+    <footer class="footer-index">
+        <p class="footer-content">
+            ArtWEB &copy;Todos los derechos reservados 2021
+        </p>
+    </footer>
+
 
 
 
@@ -145,8 +193,8 @@
         crossorigin="anonymous"></script>
 
 
-   
-          
+
+
 </body>
 
 </html>

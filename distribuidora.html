@@ -17,9 +17,51 @@
 
 <body>
 
+    <section>
+        <div id="menu">
+            <nav class="navbar sticky- top bg-dark mt-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand bg-dark text-light fs-3" href="preguntas.html">Preguntas frecuentes</a>
+                  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel">Mercado La plata</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active fs-3" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link fs-3" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle fs-4" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-4" href="productos.html">Granja</a></li>
+                            <li><a class="dropdown-item fs-4" href="productos.html">Fiambreria</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-4" href="productos.html">Almacen</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+
     <header class="distri-c">
-        <a class="btn btn-dark fs-3" href="index.html" role="button">Inicio</a>
-        <h1 class="display-1 text-center text-white bg-dark ">Costos</h1>
+        
+        <h1 class="display-1 text-center text-dark bg-light  ">Costos</h1>
 
     </header>
 
